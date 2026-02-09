@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>20. Yaş</title>
+
+<style>
+body {
+    margin: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, serif;
+}
+
+.book {
+    width: 90vw;
+    max-width: 900px;
+    height: 90vh;
+    perspective: 2000px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    transform-origin: left;
+    transition: transform 1s;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.page img, .page video {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.text {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.page.turn {
+    transform: rotateY(-180deg);
+    z-index: 0;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#prev { left: 20px; }
+#next { right: 20px; }
+</style>
+</head>
+
+<body>
+
+<div class="book" id="book">
+
+<!-- KAPAK -->
+<div class="page">
+    <video src="cover.mp4" autoplay muted loop></video>
+    <div class="text">
+        <h2>20. YAŞIN KUTLU OLSUNN BEBİŞŞŞŞŞ</h2>
+    </div>
+</div>
+
+<!-- 1 -->
+<div class="page">
+<img src="1.jpg">
+<div class="text">
+<h2>İlk Foto</h2>
+<p>Senle foto çekindiğim için olan heyecanımı unutamam öyle bir an</p>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="page">
+<img src="2.jpg">
+<div class="text">
+<h2>İlk Kahvaltı</h2>
+<p>Kalkarken çayımı doldurmak istemen çok çok çok özel bi andı benim için çikolata erisin diye çayın üstüne koyuşun bi de hayranım sana</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="page">
+<img src="3.jpg">
+<div class="text">
+<h2>Telefon</h2>
+<p>Sana teli verip sonra nerde olduğunu arayıp zor bulmuştum param yok diye yemek alayım mı demiştin nasıl unutayım beni sahiplenişini</p>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="page">
+<img src="4.jpg">
+<div class="text">
+<h2>Senin Hediyen</h2>
+<p>Hediyemi verişin en güzel anlardan biri benim için hayatımda o yarı utangaç hâlin yani çok tatlış</p>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="page">
+<img src="5.jpg">
+<div class="text">
+<h2>Benim Hediyem</h2>
+<p>Bu da benim hediyeyi verirken heyecandan öldüğüm gün çabalarımın seni mutlu etmesi benim için mutluluk kaynağı başlı başına</p>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="page">
+<img src="6.jpg">
+<div class="text">
+<h2>Kermes Video</h2>
+<p>Video için yorulduğunuz gün Survivor zaten videoyu çekme kısmı öyle</p>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="page">
+<img src="7.jpg">
+<div class="text">
+<h2>Kermes Hazırlık</h2>
+<p>Seninle beraber bi şeyler hazırlamak yan yana mutfakta çalışmak çok güzel bi deneyimdi benim için ilerde nice beraber mutfakta bi şeyler yaptığımız günler olsun inşallah</p>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="page">
+<img src="8.jpg">
+<div class="text">
+<h2>Kütüp</h2>
+<p>E kütüp tabi ki ykssel çalışmalar hem aşksal hem akademikseliz</p>
+</div>
+</div>
+
+<!-- 9 -->
+<div class="page">
+<img src="9.jpg">
+<div class="text">
+<h2>Kermes</h2>
+<p>Direkt sizin kermes bu sefer vaktimin çoğunu ders yerine kermeste geçirdiğim o gün sen ayrı ben ayrı olur mu hiç</p>
+</div>
+</div>
+
+<!-- 10 -->
+<div class="page">
+<img src="10.jpg">
+<div class="text">
+<h2>Denge</h2>
+<p>Siyahıma beyaz, beyazıma siyahımsın.  
+Beni tamamlayanımsın. Karanlığıma ışık,  
+yakan güneşte serinleten gölgemsin.</p>
+</div>
+</div>
+
+<!-- 11 -->
+<div class="page">
+<img src="11.jpg">
+<div class="text">
+<h2>Yürümek</h2>
+<p>Benim için durağa kadar gelmiştin daha ne yapsın bu kız de mi</p>
+</div>
+</div>
+
+<!-- 12 -->
+<div class="page">
+<img src="12.jpg">
+<div class="text">
+<h2>Alade</h2>
+<p>Bi foto daha ne kadar iyi olabilir şuna bak ya fevkaladenin fevkinde aladeyi de başlığa bıraktım</p>
+</div>
+</div>
+
+<!-- 13 -->
+<div class="page">
+<img src="13.jpg">
+<div class="text">
+<h2>Diploma</h2>
+<p>Bi insan bu kadar mı tatlı güler ya diploma alıp liseyi tamamladığımız gün yanımda yine varsın mutluyum</p>
+</div>
+</div>
+
+<!-- 14 -->
+<div class="page">
+<img src="14.jpg">
+<div class="text">
+<h2>Yeniden</h2>
+<p>Uzun zaman sonra birbirimize kavuştuğumuz gün gülümsemelerimize bak birbirimizin yanında ne kadar mutluyuz</p>
+</div>
+</div>
+
+<!-- 15 -->
+<div class="page">
+<img src="15.jpg">
+<div class="text">
+<h2>Çiğköfte</h2>
+<p>Çiğköftesiz olmaz de mi çiğköftedir yani babadır adamdır kraldır</p>
+</div>
+</div>
+
+<!-- 16 -->
+<div class="page">
+<img src="16.jpg">
+<div class="text">
+<h2>Büyücü</h2>
+<p>Beni büyülüyosun her seferinde bambaşka şekilde sana yanıp kül oluyorum büyücüm benim.</p>
+</div>
+</div>
+
+<!-- 17 -->
+<div class="page">
+<img src="17.jpg">
+<div class="text">
+<h2>Sinema</h2>
+<p>Foto sinemada değil ama olsun o gün gittik sonuçta çok da eğlenceliydi seninle yapmak her şeyi kat kat daha zevkli hâle getiriyor zaten</p>
+</div>
+</div>
+
+<!-- 18 -->
+<div class="page">
+<img src="18.jpg">
+<div class="text">
+<h2>Lego</h2>
+<p>Yapmaktan çok zevk aldığım o lego seninle geçirdiğim o güzel vakit ilk öpücük daha neler yani mutluluk fışkırması bir gün daha</p>
+</div>
+</div>
+
+<!-- 19 -->
+<div class="page">
+<img src="19.jpg">
+<div class="text">
+<h2>Fadıl</h2>
+<p>Buraya mamiği koymadan olur mu olmaz tabi ki senin değerlin benim de değerlim Fadış beycim</p>
+</div>
+</div>
+
+<!-- 20 -->
+<div class="page">
+<img src="20.jpg">
+<div class="text">
+<h2>Yeniyıl</h2>
+<p>Seninle nice yıllara bebiş uzak da olsak kalplerimiz yakın hep</p>
+</div>
+</div>
+
+<!-- ARKA KAPAK -->
+<div class="page">
+<div class="text">
+<h2>SENİ SEVİYORUMMM BİTANEMMM</h2>
+<p>
+Gözüm görür yanan kalbim sanadır<br>
+Ruhlar deva birbirine doğruysa<br>
+Ruhum için tek doğru yön sanadır<br>
+Yirmi yıldır atan kalbim diyorsa<br><br>
+
+Seni seviyorumm hayatımın en büyük şansısın bitanem  
+nice doğum günlerine inşallah.<br><br>
+
+<b>Bebi</b>
+</p>
+</div>
+</div>
+
+</div>
+
+<button id="prev">←</button>
+<button id="next">→</button>
+
+<script>
+const pages = document.querySelectorAll('.page');
+let current = 0;
+
+pages.forEach((p, i) => p.style.zIndex = pages.length - i);
+
+document.getElementById('next').onclick = () => {
+    if (current < pages.length) {
+        pages[current].classList.add('turn');
+        current++;
+    }
+};
+
+document.getElementById('prev').onclick = () => {
+    if (current > 0) {
+        current--;
+        pages[current].classList.remove('turn');
+    }
+};
+</script>
+
+</body>
+</html>
